@@ -1,0 +1,139 @@
+{
+  "widescreen": {
+    "mode": "widescreen",
+    "color": {
+      "primary": "#E79900",
+      "background": "#FFF8EA",
+      "white": "#FFFFFF"
+    },
+    "space": {
+      "default": "20px",
+      "xxs": "5px",
+      "xs": "10px",
+      "s": "30px",
+      "m": "60px",
+      "l": "80px",
+      "xl": "100px",
+      "xxl": "200px",
+      "header": "65px",
+      "footer": "35px",
+      "inputField": {
+        "label": "100px",
+        "labelHeight": "25px",
+        "inputBox": "400px",
+        "inputBoxHeight": "25px",
+        "textBox": "400px"
+      },
+      "spacing": {
+        "small": "0 10px 0 10px",
+        "medium": "0 20px 0 20px",
+        "large": "0 40px 0 40px",
+        "pageMargin": "0 10vw 0 10vw",
+        "headerIcon": "4px 10px 0 0"
+      }
+    },
+    "fontFamily": "'Raleway', sans-serif",
+    "fontSize": {
+      "small": "10px",
+      "medium": "20px",
+      "large": "35px",
+      "heading": "110px",
+      "subHeading": "80px",
+      "title": "60px",
+      "footer": "20px"
+    },
+    "fontWeight": {
+      "thin": "100",
+      "normal": "400",
+      "bold": "700"
+    }
+  },
+  "tablet": {
+    "mode": "tablet",
+    "color": {
+      "primary": "#E79900",
+      "background": "#FFF8EA",
+      "white": "#FFFFFF"
+    },
+    "space": {
+      "default": "20px",
+      "xxs": "2px",
+      "xs": "5px",
+      "s": "10px",
+      "m": "20px",
+      "l": "40px",
+      "xl": "50px",
+      "xxl": "60px",
+      "inputField": {},
+      "spacing": {
+        "small": "0 20px 0 20px",
+        "medium": "0 10px 0 10px",
+        "large": "0 20x 0 20px"
+      }
+    },
+    "fontFamily": "'Raleway', sans-serif",
+    "fontSize": {
+      "small": "10px",
+      "medium": "20px",
+      "large": "30px",
+      "heading": "60px",
+      "subHeading": "50px",
+      "title": "40px",
+      "footer": "10px"
+    },
+    "fontWeight": {
+      "thin": "100",
+      "normal": "400",
+      "bold": "700"
+    }
+  },
+  "mobile": {
+    "mode": "mobile",
+    "color": {
+      "primary": "#E79900",
+      "background": "#FFF8EA",
+      "white": "#FFFFFF"
+    },
+    "space": {
+      "default": "20px",
+      "xxs": "2px",
+      "xs": "5px",
+      "s": "10px",
+      "m": "20px",
+      "l": "40px",
+      "xl": "50px",
+      "xxl": "60px",
+      "header": "50px",
+      "footer": "18px",
+      "inputField": {
+        "label": "80px",
+        "labelHeight": "25px",
+        "inputBox": "200px",
+        "inputBoxHeight": "25px",
+        "textBox": "200px"
+      },
+      "spacing": {
+        "small": "0 5px 0 5px",
+        "medium": "0 10px 0 10px",
+        "large": "0 20x 0 20px",
+        "pageMargin": "0 6vw 0 6vw",
+        "headerIcon": "3.5px 5px 0 0"
+      }
+    },
+    "fontFamily": "'Raleway', sans-serif",
+    "fontSize": {
+      "small": "10px",
+      "medium": "15px",
+      "large": "30px",
+      "heading": "60px",
+      "subHeading": "50px",
+      "title": "40px",
+      "footer": "10px"
+    },
+    "fontWeight": {
+      "thin": "100",
+      "normal": "400",
+      "bold": "700"
+    }
+  }
+}
