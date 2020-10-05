@@ -1,25 +1,27 @@
 import React from "react";
-import Header from "../components/Header";
-import Banner from "../components/Banner";
-import Timeline from "../components/Timeline";
-import ContactForm from "../components/ContactForm";
-import Footer from "../components/Footer";
-import Building from "../components/Building";
-import Layout from "../layouts/layout";
+import {
+  HashRouter as Router,
+  Route,
+  Switch,
+  Redirect,
+} from "react-router-dom";
+import Home from "./home";
+import About from "./about";
+import Projects from "./projects";
+import Page404 from "./404";
 
 class App extends React.Component {
   render() {
     return (
-      <>
-        <Layout title="Sanket Jain">
-          <Header />
-          <Banner />
-          <Timeline />
-          <Building />
-          <ContactForm />
-          <Footer />
-        </Layout>
-      </>
+      <Router>
+        <Switch>
+          <Route path="/" exact component={Home} />
+          <Route path="/about" exact component={About} />
+          <Route path="/projects" exact component={Projects} />
+          <Route path="/404" component={Page404} />
+          <Redirect to="/404" />
+        </Switch>
+      </Router>
     );
   }
 }

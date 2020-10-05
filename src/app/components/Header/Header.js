@@ -12,7 +12,7 @@ const useStyles = makeStyles({
     backgroundColor: (props) =>
       props.scroll <= props.innerHeight
         ? "transparent"
-        : props.theme.color.background,
+        : props.theme.color.black,
     width: "100%",
     left: "50%",
     right: "50%",
@@ -20,7 +20,7 @@ const useStyles = makeStyles({
     marginRight: "-50%",
     zIndex: "1",
     top: "0",
-    color: (props) => (props.scroll <= props.innerHeight ? "white" : "black"),
+    color: (props) => props.theme.color.white,
     padding: "0",
     height: (props) => props.theme.space.header,
     transition: "background-color 0.5s, color 0.5s, position 0.5s",
@@ -40,7 +40,7 @@ const useStyles = makeStyles({
     paddingRight: (props) => props.theme.space.s,
   },
   drawerPaper: {
-    backgroundColor: "rgba(190, 176, 148, 0.6)",
+    backgroundColor: "rgba(190, 176, 148, 0.9)",
   },
 });
 
@@ -48,9 +48,12 @@ const Header = (props) => {
   const { theme } = props;
   const [drawer, setDrawer] = useState(false);
   const [scroll, setScroll] = useState(0);
-  const innerHeight = window.innerHeight;
+  let innerHeight;
 
-  window.addEventListener("scroll", () => setScroll(window.pageYOffset));
+  if (props.home) {
+    window.addEventListener("scroll", () => setScroll(window.pageYOffset));
+    innerHeight = window.innerHeight;
+  }
 
   const classes = useStyles({ theme, scroll, innerHeight });
 

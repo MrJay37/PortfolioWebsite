@@ -1,4 +1,5 @@
 import React from "react";
+import { withRouter } from "react-router-dom";
 import { makeStyles } from "@material-ui/styles";
 import { HiBriefcase, HiUser, HiOutlineMail, HiDownload } from "react-icons/hi";
 
@@ -6,19 +7,19 @@ const menuIcons = [
   {
     id: 0,
     name: "About",
-    link: "#building",
+    link: "#/about",
     icon: <HiUser style={{ margin: "0", padding: "0" }} />,
   },
   {
     id: 1,
     name: "Projects",
-    link: "#building",
+    link: "#/projects",
     icon: <HiBriefcase style={{ margin: "0", padding: "0" }} />,
   },
   {
     id: 2,
     name: "Contact",
-    link: "#contact",
+    link: "",
     icon: <HiOutlineMail style={{ margin: "0", padding: "0" }} />,
   },
 ];
@@ -64,6 +65,7 @@ const Menu = (props) => {
   const { theme } = props;
   const wm = theme.mode === "widescreen" ? true : false;
   const classes = useStyles({ theme, wm });
+
   return (
     <div>
       {wm ? null : (
@@ -78,10 +80,22 @@ const Menu = (props) => {
       <ul className={classes.root}>
         {menuIcons.map((menu) => (
           <li key={menu.id} className={classes.li} onClick={props.closeDrawer}>
-            <a href={menu.link} className={classes.a}>
-              <span className={classes.span}>{menu.icon}</span>
-              <span>{menu.name}</span>
-            </a>
+            {menu.link ? (
+              <a href={menu.link} className={classes.a} onClick={menu.onClick}>
+                <span className={classes.span}>{menu.icon}</span>
+                <span>{menu.name}</span>
+              </a>
+            ) : (
+              <div
+                className={classes.a}
+                onClick={() =>
+                  document.getElementById("contact").scrollIntoView()
+                }
+              >
+                <span className={classes.span}>{menu.icon}</span>
+                <span>{menu.name}</span>
+              </div>
+            )}
           </li>
         ))}
       </ul>
@@ -89,4 +103,4 @@ const Menu = (props) => {
   );
 };
 
-export default Menu;
+export default withRouter(Menu);

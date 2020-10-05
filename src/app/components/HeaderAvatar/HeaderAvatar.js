@@ -9,14 +9,18 @@ const useStyles = makeStyles(() => ({
     color: "inherit",
     textDecoration: "none",
   },
+  picContainer: {
+    height: "inherit",
+    padding: (theme) => theme.headerAvatar.picPadding,
+  },
   fontTheme1: {
-    fontSize: (theme) => theme.fontSize.large,
+    fontSize: (theme) => theme.headerAvatar.font1,
     margin: "0",
     padding: (theme) => theme.space.spacing.small,
     fontWeight: (theme) => theme.fontWeight.thin,
   },
   fontTheme2: {
-    fontSize: (theme) => theme.fontSize.small,
+    fontSize: (theme) => theme.headerAvatar.font2,
     margin: "0",
     padding: (theme) => theme.space.spacing.small,
     fontWeight: (theme) => theme.fontWeight.thin,
@@ -29,13 +33,13 @@ const HeaderAvatar = (props) => {
 
   return (
     // eslint-disable-next-line
-    <a href="#" className={classes.root}>
-      <div>
+    <a href="/" className={classes.root}>
+      <div className={classes.picContainer}>
         <img
           src={require("../../static/PicIcon.jpg")}
           alt="me"
           style={{
-            width: theme.mode === "widescreen" ? theme.space.m : theme.space.l,
+            width: theme.headerAvatar.picWidth,
             height: "auto",
             borderRadius: "50%",
           }}

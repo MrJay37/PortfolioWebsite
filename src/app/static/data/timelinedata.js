@@ -2,40 +2,34 @@ import React from "react";
 
 export const TimeLineData = [
   {
-    id: 0,
-    date: "April 2014",
+    date: "Apr 2014",
     eventTitle: "Finished High School",
     eventDescription: (
       <div>Graduated with High School Certificate from Mithibai College.</div>
     ),
   },
   {
-    id: 1,
-    date: "August 2014",
+    date: "Aug 2014",
     eventTitle: "Started BE at DJ Sanghvi College of Engineering",
     eventDescription: <>Starting with my engineering journey from here.</>,
   },
   {
-    id: 2,
-    date: "November 2014",
+    date: "Nov 2014",
     eventTitle: "Started Abagauss",
     eventDescription: <>What's an Abagauss?</>,
   },
   {
-    id: 3,
-    date: "December 2015",
+    date: "Dec 2015",
     eventTitle: "Abagauss is restarted",
     eventDescription: <>Gonna need some more info on that, buddy.</>,
   },
   {
-    id: 4,
-    date: "August 2016",
+    date: "Aug 2016",
     eventTitle: "First Electronics Project",
     eventDescription: <>I made an electronic music instrument :)</>,
   },
   {
-    id: 5,
-    date: "January 2017",
+    date: "Jan 2017",
     eventTitle: "Project continued",
     eventDescription: (
       <>
@@ -45,20 +39,17 @@ export const TimeLineData = [
     ),
   },
   {
-    id: 6,
-    date: "March 2017",
+    date: "Mar 2017",
     eventTitle: "Adopted building compound dogs",
     eventDescription: <>I am a father of 5 now.</>,
   },
   {
-    id: 7,
-    date: "December 2017",
+    date: "Dec 2017",
     eventTitle: "Goa",
     eventDescription: <>VACAYYYYY</>,
   },
   {
-    id: 8,
-    date: "January 2018",
+    date: "Jan 2018",
     eventTitle: "Final Year Project: The Conclusion",
     eventDescription: (
       <>
@@ -69,8 +60,7 @@ export const TimeLineData = [
     ),
   },
   {
-    id: 9,
-    date: "March 2018",
+    date: "Mar 2018",
     eventTitle: "Trips to south and north India!",
     eventDescription: (
       <>
@@ -81,8 +71,7 @@ export const TimeLineData = [
     ),
   },
   {
-    id: 10,
-    date: "April 2018",
+    date: "Apr 2018",
     eventTitle: "IETE Disaster",
     eventDescription: (
       <>
@@ -93,28 +82,24 @@ export const TimeLineData = [
     ),
   },
   {
-    id: 11,
     date: "May 2018",
     eventTitle: "Graduated with Bachelor in Engineering from Mumbai University",
     eventDescription: <>Hello real world.</>,
   },
   {
-    id: 12,
-    date: "July 2018",
+    date: "Jul 2018",
     eventTitle: "Joined Sonic Octaves as Assistant Audio Engineer",
     eventDescription: <>I'm making dope beats and disappointing my parents.</>,
   },
   {
-    id: 13,
-    date: "December 2019",
+    date: "Dec 2019",
     eventTitle: "Joined Acuradyne Medical Systems as Embedded Systems Engineer",
     eventDescription: (
       <>I'm not making dope beats and disappointing my parents.</>
     ),
   },
   {
-    id: 14,
-    date: "February 2019",
+    date: "Feb 2019",
     eventTitle: "Gave tests for international university admission process",
     eventDescription: (
       <>
@@ -125,26 +110,22 @@ export const TimeLineData = [
     ),
   },
   {
-    id: 15,
-    date: "March 2019",
+    date: "Mar 2019",
     eventTitle: "Admission Offer Letter from Stevens Institute of Technology",
     eventDescription: <>That was fast.</>,
   },
   {
-    id: 16,
     date: "May 2019",
     eventTitle: "Left Acuradyne",
     eventDescription: <>I'm gonna miss them.</>,
   },
   {
-    id: 17,
-    date: "July 2019",
+    date: "Jul 2019",
     eventTitle: "Farewells",
     eventDescription: <>Am I doing the right thing?</>,
   },
   {
-    id: 18,
-    date: "August 2019",
+    date: "Aug 2019",
     eventTitle: "Move to Jersey City",
     eventDescription: (
       <>
@@ -155,16 +136,14 @@ export const TimeLineData = [
     ),
   },
   {
-    id: 19,
-    date: "Decembed 2019",
+    date: "Dec 2019",
     eventTitle: "Spring Break",
     eventDescription: (
       <>Call me Mr Worldwide because I went to Philadelphia and Washington DC</>
     ),
   },
   {
-    id: 20,
-    date: "February 2020",
+    date: "Feb 2020",
     eventTitle: "DragonHacks 2020",
     eventDescription: (
       <>
@@ -174,28 +153,24 @@ export const TimeLineData = [
     ),
   },
   {
-    id: 21,
     date: "May 2020",
     eventTitle: "Spring semester Project Submission",
     eventDescription: <>Anyone need a hand? I have 3</>,
   },
   {
-    id: 22,
-    date: "June 2020",
+    date: "Jun 2020",
     eventTitle: "Summer Internship",
     eventDescription: (
       <>Front End Developer Intern at Contentstack, I'm loving this so much</>
     ),
   },
   {
-    id: 23,
     date: "Aug 2020",
     eventTitle: "New place, new faces",
     eventDescription: <>I love these guys</>,
   },
   {
-    id: 24,
-    date: "September 2020",
+    date: "Sep 2020",
     eventTitle: "Here we are",
     eventDescription: <>Sorry</>,
   },

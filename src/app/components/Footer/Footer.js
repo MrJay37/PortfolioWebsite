@@ -3,14 +3,17 @@ import { makeStyles } from "@material-ui/styles";
 
 const useStyles = makeStyles({
   root: {
-    marginTop: (theme) => theme.space.l,
-    backgroundColor: (theme) => theme.color.primary,
+    position: "absolute",
+    bottom: "0",
+    left: "0",
+    right: "0",
+    backgroundColor: (theme) => theme.color.black,
     color: (theme) => theme.color.white,
     fontSize: (theme) => theme.fontSize.footer,
     height: (theme) => theme.space.footer,
     display: "flex",
     justifyContent: "center",
-    alignItems: "center",
+    alignItems: "start",
   },
 });
 const Footer = (props) => {

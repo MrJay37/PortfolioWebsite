@@ -2,6 +2,7 @@
   "widescreen": {
     "mode": "widescreen",
     "color": {
+      "black": "#000000",
       "primary": "#E79900",
       "background": "#FFF8EA",
       "white": "#FFFFFF"
@@ -18,6 +19,7 @@
       "header": "65px",
       "footer": "35px",
       "inputField": {
+        "buttonMarginLeft": "110px",
         "label": "100px",
         "labelHeight": "25px",
         "inputBox": "400px",
@@ -34,11 +36,12 @@
     },
     "fontFamily": "'Raleway', sans-serif",
     "fontSize": {
-      "small": "10px",
-      "medium": "20px",
-      "large": "35px",
+      "extraSmall": "10px",
+      "small": "20px",
+      "medium": "30px",
+      "large": "45px",
       "heading": "110px",
-      "subHeading": "80px",
+      "subHeading": "60px",
       "title": "60px",
       "footer": "20px"
     },
@@ -46,71 +49,56 @@
       "thin": "100",
       "normal": "400",
       "bold": "700"
+    },
+    "contactForm": {
+      "inputFieldPadding": "10px"
+    },
+    "banner": {
+      "objectPosition": "40% 0%"
+    },
+    "headerAvatar": {
+      "font1": "32px",
+      "font2": "16px",
+      "picWidth": "60px",
+      "picPadding": "2.5px 0 0 0"
+    },
+    "cards": {
+      "pageMargin": "30px 6vw 0 6vw",
+      "cardMargin": "5px 0 15px 0",
+      "sectionHeaderPadding": "0 8.5vw",
+      "headerPadding": "10px",
+      "headerFontSize": "28px",
+      "subHeaderFontSize": "16px",
+      "bulletsPadding": "0 0 0 25px",
+      "bulletsFontsize": "18px"
     }
   },
   "tablet": {
     "mode": "tablet",
     "color": {
+      "black": "#000000",
       "primary": "#E79900",
       "background": "#FFF8EA",
       "white": "#FFFFFF"
     },
     "space": {
       "default": "20px",
-      "xxs": "2px",
+      "xxs": "5px",
       "xs": "5px",
       "s": "10px",
       "m": "20px",
       "l": "40px",
       "xl": "50px",
-      "xxl": "60px",
-      "inputField": {},
-      "spacing": {
-        "small": "0 20px 0 20px",
-        "medium": "0 10px 0 10px",
-        "large": "0 20x 0 20px"
-      }
-    },
-    "fontFamily": "'Raleway', sans-serif",
-    "fontSize": {
-      "small": "10px",
-      "medium": "20px",
-      "large": "30px",
-      "heading": "60px",
-      "subHeading": "50px",
-      "title": "40px",
-      "footer": "10px"
-    },
-    "fontWeight": {
-      "thin": "100",
-      "normal": "400",
-      "bold": "700"
-    }
-  },
-  "mobile": {
-    "mode": "mobile",
-    "color": {
-      "primary": "#E79900",
-      "background": "#FFF8EA",
-      "white": "#FFFFFF"
-    },
-    "space": {
-      "default": "20px",
-      "xxs": "2px",
-      "xs": "5px",
-      "s": "10px",
-      "m": "20px",
-      "l": "40px",
-      "xl": "50px",
-      "xxl": "60px",
-      "header": "50px",
+      "xxl": "150px",
+      "header": "65px",
       "footer": "18px",
       "inputField": {
+        "buttonMarginLeft": "",
         "label": "80px",
-        "labelHeight": "25px",
-        "inputBox": "200px",
+        "labelHeight": "30px",
+        "inputBox": "400px",
         "inputBoxHeight": "25px",
-        "textBox": "200px"
+        "textBox": "400px"
       },
       "spacing": {
         "small": "0 5px 0 5px",
@@ -122,11 +110,86 @@
     },
     "fontFamily": "'Raleway', sans-serif",
     "fontSize": {
-      "small": "10px",
+      "extraSmall": "10px",
+      "small": "18px",
+      "medium": "22px",
+      "large": "30px",
+      "heading": "80px",
+      "subHeading": "35px",
+      "title": "50px",
+      "footer": "14px"
+    },
+    "fontWeight": {
+      "thin": "100",
+      "normal": "400",
+      "bold": "700"
+    },
+    "contactForm": {
+      "inputFieldPadding": "10px"
+    },
+    "banner": {
+      "objectPosition": "25% 0%"
+    },
+    "headerAvatar": {
+      "font1": "30px",
+      "font2": "15px",
+      "picWidth": "60px",
+      "picPadding": "2.5px 0 0 0"
+    },
+    "cards": {
+      "pageMargin": "30px 6vw 0 6vw",
+      "cardMargin": "15px 0 15px 0",
+      "sectionHeaderPadding": "0 8.5vw",
+      "headerPadding": "10px",
+      "headerFontSize": "24px",
+      "subHeaderFontSize": "14px",
+      "bulletsPadding": "0 0 0 30px",
+      "bulletsFontsize": "14px"
+    }
+  },
+  "mobile": {
+    "mode": "mobile",
+    "color": {
+      "black": "#000000",
+      "primary": "#E79900",
+      "background": "#FFF8EA",
+      "white": "#FFFFFF"
+    },
+    "space": {
+      "default": "20px",
+      "xxs": "2px",
+      "xs": "5px",
+      "s": "10px",
+      "m": "20px",
+      "l": "40px",
+      "xl": "50px",
+      "xxl": "150px",
+      "header": "50px",
+      "footer": "18px",
+      "inputField": {
+        "buttonMarginLeft": "",
+        "label": "80px",
+        "labelHeight": "25px",
+        "inputBox": "250px",
+        "inputBoxHeight": "25px",
+        "textBox": "250px"
+      },
+      "spacing": {
+        "small": "0 5px 0 5px",
+        "medium": "0 10px 0 10px",
+        "large": "0 20x 0 20px",
+        "pageMargin": "0 6vw 0 6vw",
+        "headerIcon": "3.5px 5px 0 0"
+      }
+    },
+    "fontFamily": "'Raleway', sans-serif",
+    "fontSize": {
+      "extraSmall": "10px",
+      "small": "15px",
       "medium": "15px",
       "large": "30px",
-      "heading": "60px",
-      "subHeading": "50px",
+      "heading": "55px",
+      "subHeading": "25px",
       "title": "40px",
       "footer": "10px"
     },
@@ -134,6 +197,28 @@
       "thin": "100",
       "normal": "400",
       "bold": "700"
+    },
+    "contactForm": {
+      "inputFieldPadding": "10px"
+    },
+    "banner": {
+      "objectPosition": "25% 0%"
+    },
+    "headerAvatar": {
+      "font1": "25px",
+      "font2": "12.5px",
+      "picWidth": "45px",
+      "picPadding": "2.5px 0 0 0"
+    },
+    "cards": {
+      "pageMargin": "30px 6vw 0 6vw",
+      "cardMargin": "5px 0 15px 0",
+      "sectionHeaderPadding": "0 8.5vw",
+      "headerPadding": "10px",
+      "headerFontSize": "20px",
+      "subHeaderFontSize": "12px",
+      "bulletsPadding": "0 0 0 25px",
+      "bulletsFontsize": "14px"
     }
   }
 }

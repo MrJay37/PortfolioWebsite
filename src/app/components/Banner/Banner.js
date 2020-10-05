@@ -8,6 +8,7 @@ const useStyles = makeStyles({
     color: "white",
     backgroundColor: "black",
     width: "100%",
+    maxHeight: "100vh",
     overflow: "hidden",
   },
   image: {
@@ -16,8 +17,7 @@ const useStyles = makeStyles({
     height: "100vh",
     filter: "brightness(50%)",
     objectFit: "cover",
-    objectPosition: (theme) =>
-      theme.mode === "widescreen" ? "40% 0%" : "25% 0%",
+    objectPosition: (theme) => theme.banner.objectPosition,
     animation: "$pictureLoad 2000ms",
     animationTimingFunction: "ease-in-out",
   },
@@ -35,7 +35,7 @@ const useStyles = makeStyles({
   },
   head2: {
     paddingTop: (theme) => theme.space.s,
-    fontSize: (theme) => theme.fontSize.title,
+    fontSize: (theme) => theme.fontSize.subHeading,
     fontWeight: (theme) => theme.fontWeight.thin,
     animation: "$textload 2000ms",
   },
@@ -78,10 +78,13 @@ const Banner = (props) => {
           />
         )}
         <div className={classes.heading}>
-          <div className={classes.head1}>Hi, I'm Sanket</div>
-          <div className={classes.head2}>
-            I work with electronics, software and music
-          </div>
+          <div className={classes.head1}>{props.heading}</div>
+          <div className={classes.head2}>{props.subHeading}</div>
+          {props.countdown && (
+            <div className={classes.head2}>
+              Redirecting in {props.countdown}
+            </div>
+          )}
         </div>
       </div>
     </>

@@ -1,5 +1,8 @@
 import React from "react";
 import { Helmet } from "react-helmet";
+import ContactForm from "../components/ContactForm";
+import Footer from "../components/Footer";
+import Credits from "../components/Credits";
 import "../styles/global.scss";
 import { getThemes } from "../utils/helpers";
 
@@ -46,7 +49,7 @@ class Layout extends React.Component {
 
   render() {
     const theme = this.Theme;
-
+    const { home } = this.props;
     const childrenWithProps = React.Children.map(
       this.props.children,
       (child) => {
@@ -70,9 +73,19 @@ class Layout extends React.Component {
           style={{
             fontFamily: theme.fontFamily,
             backgroundColor: theme.color.background,
+            paddingTop: home ? "0" : theme.space.header,
+            minHeight: "100vh",
+            position: "relative",
           }}
         >
           {childrenWithProps}
+          {this.props.error ? null : (
+            <>
+              <ContactForm theme={theme} />
+              <Credits theme={theme} />
+              <Footer theme={theme} />
+            </>
+          )}
         </div>
       </>
     );

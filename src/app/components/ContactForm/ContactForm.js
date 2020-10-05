@@ -2,12 +2,15 @@ import React from "react";
 import { connect } from "react-redux";
 import { useForm } from "react-hook-form";
 import { makeStyles } from "@material-ui/styles";
+import { LinksBar } from "../Links";
 import { FcHighPriority } from "react-icons/fc";
 
 const useStyles = makeStyles({
   root: {
-    margin: (theme) => theme.space.spacing.pageMargin,
-    marginTop: (theme) => theme.space.l,
+    backgroundColor: (theme) => theme.color.black,
+    color: (theme) => theme.color.white,
+    padding: (theme) => theme.space.spacing.pageMargin,
+    paddingTop: (theme) => theme.space.header,
   },
   heading: {
     fontSize: (theme) => theme.fontSize.title,
@@ -20,23 +23,21 @@ const useStyles = makeStyles({
   formContainer: {
     display: "flex",
     flexDirection: "column",
-    maxWidth: "1000px",
+    width: (theme) => (theme.mode === "widescreen" ? "" : "100%"),
+    alignItems: (theme) => (theme.mode === "widescreen" ? "" : "center"),
   },
   inputField: {
     display: "flex",
     alignItems: "flex-start",
-    padding: (theme) =>
-      theme.mode === "widescreen" ? theme.space.xs : theme.space.s,
+    padding: (theme) => theme.contactForm.inputFieldPadding,
   },
   input: {
-    border: "1px solid grey",
     borderRadius: "2em",
     fontSize: (theme) => theme.fontSize.small,
     fontWeight: (theme) => theme.fontWeight.thin,
     padding: (theme) => theme.space.spacing.small,
     height: (theme) => theme.space.inputField.inputBoxHeight,
     outline: "none",
-    caretColor: "transparent",
     backgroundColor: (theme) => theme.color.white,
     width: (theme) => theme.space.inputField.inputBox,
     transition: "background-color 0.25s",
@@ -45,7 +46,6 @@ const useStyles = makeStyles({
     },
   },
   textarea: {
-    border: "1px solid grey",
     borderRadius: "1em",
     fontSize: (theme) => theme.fontSize.small,
     fontWeight: (theme) => theme.fontWeight.thin,
@@ -54,7 +54,6 @@ const useStyles = makeStyles({
     width: (theme) => theme.space.inputField.textBox,
     resize: "none",
     outline: "none",
-    caretColor: "transparent",
     transition: "background-color 0.25s",
     "&:hover": {
       backgroundColor: (theme) => theme.color.background,
@@ -65,17 +64,17 @@ const useStyles = makeStyles({
     width: (theme) => theme.space.inputField.label,
   },
   buttonBox: {
-    marginLeft: (theme) => theme.space.inputField.label,
+    marginLeft: (theme) => theme.space.inputField.buttonMarginLeft,
     display: "flex",
-    justifyContent: "space-between",
-    maxWidth: (theme) => theme.space.inputField.inputBox,
+    flexDirection: (theme) => (theme.mode === "widescreen" ? "row" : "column"),
     alignItems: "center",
+    justifyContent: (theme) => (theme.mode === "widescreen" ? "" : "center"),
+    width: (theme) => theme.space.inputField.inputBox,
   },
   button: {
     border: "none",
     backgroundColor: (theme) => theme.color.primary,
-    marginLeft: (theme) =>
-      theme.mode === "widescreen" ? theme.space.xs : theme.space.s,
+    marginBottom: (theme) => theme.space.s,
     borderRadius: "2em",
     height: (theme) => theme.space.inputField.labelHeight,
     width: (theme) => theme.space.inputField.label,
@@ -87,7 +86,6 @@ const useStyles = makeStyles({
     "&:hover": {
       backgroundColor: (theme) => theme.color.background,
       color: "black",
-      border: "1px solid grey",
     },
   },
   confirmMessage: {
@@ -181,6 +179,7 @@ const ContactForm = (props) => {
           </div>
         </div>
       </form>
+      <LinksBar {...props} />
     </div>
   );
 };
