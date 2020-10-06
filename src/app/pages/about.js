@@ -2,7 +2,7 @@ import React from "react";
 import Header from "../components/Header";
 import EducationCards from "../components/EducationCards";
 import WorkExCards from "../components/WorkExCards";
-import Timeline from "../components/Timeline";
+
 import Layout from "../layouts/layout";
 
 class About extends React.Component {
@@ -24,7 +24,6 @@ class About extends React.Component {
           <Header />
           <WorkExCards />
           <EducationCards />
-          <Timeline />
         </Layout>
       </>
     );

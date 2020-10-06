@@ -1,7 +1,9 @@
 import React from "react";
+import { withRouter } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import ContactForm from "../components/ContactForm";
 import Footer from "../components/Footer";
+import GoToTopButton from "../components/GoToTopButton";
 import Credits from "../components/Credits";
 import "../styles/global.scss";
 import { getThemes } from "../utils/helpers";
@@ -21,6 +23,7 @@ class Layout extends React.Component {
 
   componentDidMount() {
     this.Theme = getThemes();
+    window.scrollTo(0, 0);
   }
 
   windowResizeUpdate() {
@@ -78,6 +81,7 @@ class Layout extends React.Component {
             position: "relative",
           }}
         >
+          <GoToTopButton theme={theme} />
           {childrenWithProps}
           {this.props.error ? null : (
             <>
@@ -92,4 +96,4 @@ class Layout extends React.Component {
   }
 }
 
-export default Layout;
+export default withRouter(Layout);

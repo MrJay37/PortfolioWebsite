@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { makeStyles } from "@material-ui/core/styles";
 
 const useStyles = makeStyles(() => ({
@@ -33,7 +34,7 @@ const HeaderAvatar = (props) => {
 
   return (
     // eslint-disable-next-line
-    <a href="/" className={classes.root}>
+    <Link to="/" className={classes.root}>
       <div className={classes.picContainer}>
         <img
           src={require("../../static/PicIcon.jpg")}
@@ -49,7 +50,7 @@ const HeaderAvatar = (props) => {
         <h1 className={classes.fontTheme1}>Sanket Jain</h1>
         <h2 className={classes.fontTheme2}>Computer Engineer</h2>
       </div>
-    </a>
+    </Link>
   );
 };
 

@@ -1,6 +1,7 @@
 import React from "react";
 import { withRouter } from "react-router-dom";
 import { makeStyles } from "@material-ui/styles";
+import { MdQueueMusic } from "react-icons/md";
 import { HiBriefcase, HiUser, HiOutlineMail, HiDownload } from "react-icons/hi";
 
 const menuIcons = [
@@ -18,6 +19,12 @@ const menuIcons = [
   },
   {
     id: 2,
+    name: "Music",
+    link: "#/music",
+    icon: <MdQueueMusic style={{ margin: "0", padding: "0" }} />,
+  },
+  {
+    id: 3,
     name: "Contact",
     link: "",
     icon: <HiOutlineMail style={{ margin: "0", padding: "0" }} />,
@@ -47,7 +54,7 @@ const useStyles = makeStyles({
   },
   span: {
     margin: (props) => props.theme.space.spacing.headerIcon,
-    fontSize: (props) => props.theme.fontSize.medium,
+    fontSize: (props) => props.theme.fontSize.menuItem,
   },
   closeDrawIcon: {
     fontSize: (props) => props.theme.fontSize.large,
@@ -81,7 +88,7 @@ const Menu = (props) => {
         {menuIcons.map((menu) => (
           <li key={menu.id} className={classes.li} onClick={props.closeDrawer}>
             {menu.link ? (
-              <a href={menu.link} className={classes.a} onClick={menu.onClick}>
+              <a href={menu.link} className={classes.a}>
                 <span className={classes.span}>{menu.icon}</span>
                 <span>{menu.name}</span>
               </a>
@@ -89,7 +96,9 @@ const Menu = (props) => {
               <div
                 className={classes.a}
                 onClick={() =>
-                  document.getElementById("contact").scrollIntoView()
+                  document
+                    .getElementById("contact")
+                    .scrollIntoView({ behavior: "smooth" })
                 }
               >
                 <span className={classes.span}>{menu.icon}</span>

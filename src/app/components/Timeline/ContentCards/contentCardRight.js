@@ -23,7 +23,7 @@ const useStyles = makeStyles({
     display: "flex",
     width: "100%",
     justifyContent: "space-between",
-
+    fontSize: (theme) => theme.cards.headerFontSize,
     "@media only screen and (max-width: 1024px)": {
       display: "block",
     },
@@ -32,15 +32,17 @@ const useStyles = makeStyles({
     flexGrow: "1",
     minWidth: "60px",
     maxWidth: "60px",
+    minHeight: "62px",
+    paddingTop: (theme) => theme.space.xxs,
     backgroundColor: (theme) => theme.color.black,
     textAlign: "center",
-    paddingTop: (theme) => theme.space.xxs,
+
     color: (theme) => theme.color.white,
-    fontSize: (theme) => theme.fontSize.extraSmall,
+    fontSize: (theme) => theme.cards.subHeaderFontSize,
 
     "@media only screen and (max-width: 1024px)": {
       padding: (theme) => theme.space.xxs,
-      textAlign: "center",
+      minHeight: "auto",
       minWidth: "100%",
       maxWidth: "100%",
     },
@@ -59,6 +61,7 @@ const useStyles = makeStyles({
   },
   description: {
     padding: (theme) => theme.space.xs,
+    fontSize: (theme) => theme.cards.bulletsFontsize,
     textAlign: "left",
   },
 });

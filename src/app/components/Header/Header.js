@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { makeStyles } from "@material-ui/styles";
 import HeaderAvatar from "../HeaderAvatar";
 import Menu from "../Menu";
+import { LinksMenu } from "../Links";
 import { HiMenu } from "react-icons/hi";
 import Drawer from "@material-ui/core/Drawer";
 
@@ -24,6 +25,11 @@ const useStyles = makeStyles({
     padding: "0",
     height: (props) => props.theme.space.header,
     transition: "background-color 0.5s, color 0.5s, position 0.5s",
+
+    boxShadow: (props) =>
+      props.scroll <= props.innerHeight
+        ? "none"
+        : "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)",
   },
   header: {
     display: "flex",
@@ -41,6 +47,13 @@ const useStyles = makeStyles({
   },
   drawerPaper: {
     backgroundColor: "rgba(190, 176, 148, 0.9)",
+    width: "45%",
+  },
+  drawerMenu: {
+    height: "100%",
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "space-between",
   },
 });
 
@@ -76,8 +89,9 @@ const Header = (props) => {
               open={drawer}
               onClose={() => setDrawer(false)}
             >
-              <div>
+              <div className={classes.drawerMenu}>
                 <Menu closeDrawer={() => setDrawer(false)} {...props} />
+                <LinksMenu closeDrawer={() => setDrawer(false)} {...props} />
               </div>
             </Drawer>
           </div>

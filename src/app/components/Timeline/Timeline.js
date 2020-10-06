@@ -21,6 +21,7 @@ const useStyles = makeStyles(() => ({
   root: {
     marginBottom: (props) => props.theme.space.s,
     marginTop: (props) => props.theme.space.s,
+    zIndex: "0",
   },
   accordian: {
     boxShadow: "none",

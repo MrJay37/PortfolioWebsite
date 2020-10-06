@@ -43,7 +43,8 @@
       "heading": "110px",
       "subHeading": "60px",
       "title": "60px",
-      "footer": "20px"
+      "footer": "20px",
+      "menuItem": "30px"
     },
     "fontWeight": {
       "thin": "100",
@@ -71,6 +72,23 @@
       "subHeaderFontSize": "16px",
       "bulletsPadding": "0 0 0 25px",
       "bulletsFontsize": "18px"
+    },
+    "home": {
+      "pageMargin": "65px 10vw",
+      "textPadding": "0 20px 0 0",
+      "lineSpacing": "10px",
+      "cardWidth": "80px",
+      "cardPadding": "25px 10px 10px 10px",
+      "cardHeight": "140px",
+      "cardsPadding": "50px",
+      "skillBarPadding": "6px 0",
+      "linkLabelSpace": "10px",
+      "cardIconFontSize": "40px"
+    },
+    "gototop": {
+      "top": "85%",
+      "left": "90%",
+      "padding": "20px 21px"
     }
   },
   "tablet": {
@@ -117,7 +135,8 @@
       "heading": "80px",
       "subHeading": "35px",
       "title": "50px",
-      "footer": "14px"
+      "footer": "14px",
+      "menuItem": "30px"
     },
     "fontWeight": {
       "thin": "100",
@@ -145,6 +164,18 @@
       "subHeaderFontSize": "14px",
       "bulletsPadding": "0 0 0 30px",
       "bulletsFontsize": "14px"
+    },
+    "home": {
+      "pageMargin": "65px 6vw",
+      "textPadding": "10px 0 0 0",
+      "lineSpacing": "20px",
+      "skillBarPadding": "6px 0",
+      "linkLabelSpace": "6px"
+    },
+    "gototop": {
+      "top": "88%",
+      "left": "90%",
+      "padding": "18px 19px"
     }
   },
   "mobile": {
@@ -191,7 +222,8 @@
       "heading": "55px",
       "subHeading": "25px",
       "title": "40px",
-      "footer": "10px"
+      "footer": "10px",
+      "menuItem": "30px"
     },
     "fontWeight": {
       "thin": "100",
@@ -219,6 +251,23 @@
       "subHeaderFontSize": "12px",
       "bulletsPadding": "0 0 0 25px",
       "bulletsFontsize": "14px"
+    },
+    "home": {
+      "pageMargin": "50px 6vw",
+      "textPadding": "10px 0 0 0",
+      "lineSpacing": "20px",
+      "cardWidth": "72px",
+      "cardPadding": "30px 10px 10px 10px",
+      "cardHeight": "140px",
+      "cardsPadding": "30px",
+      "skillBarPadding": "6px 0",
+      "linkLabelSpace": "6px",
+      "cardIconFontSize": "40px"
+    },
+    "gototop": {
+      "top": "88%",
+      "left": "80%",
+      "padding": "18px 19px"
     }
   }
 }

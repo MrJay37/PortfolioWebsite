@@ -5,7 +5,6 @@ import Layout from "../layouts/layout";
 
 const Page404 = (props) => {
   const [redirect, setRedirect] = useState(5);
-  console.log(redirect);
 
   useEffect(() => {
     if (redirect > 0) {

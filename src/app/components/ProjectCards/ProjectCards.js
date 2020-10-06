@@ -3,10 +3,6 @@ import { makeStyles } from "@material-ui/core/styles";
 import { FaGithub, FaYoutube } from "react-icons/fa";
 import projectData from "../../static/data/projectData";
 
-import Accordion from "@material-ui/core/Accordion";
-import AccordionSummary from "@material-ui/core/AccordionSummary";
-import AccordionDetails from "@material-ui/core/AccordionDetails";
-
 const useStyles = makeStyles({
   root: {
     padding: ({ theme }) => theme.cards.pageMargin,
@@ -40,8 +36,7 @@ const useStyles = makeStyles({
 
     transition: "transform 0.25s, box-shadow 0.25s",
   },
-
-  image: {
+  urlImage: {
     width: "100%",
     height: "auto",
     maxHeight: "400px",
@@ -54,6 +49,22 @@ const useStyles = makeStyles({
     },
 
     transition: "filter 0.25s",
+  },
+  goToApp: {
+    position: "absolute",
+    width: "90%",
+    top: "50%",
+    left: "50%",
+    transform: "translate(-50%, -50%)",
+    textAlign: "center",
+  },
+  image: {
+    width: "100%",
+    height: "auto",
+    maxHeight: "400px",
+    objectFit: "cover",
+    objectPosition: "0% 0%",
+    display: "block",
   },
 
   cardHeader: {
@@ -155,7 +166,7 @@ const ProjectCards = (props) => {
               {card.image && card.url ? (
                 <a href={card.url} target="_blank" rel="noopener noreferrer">
                   <img
-                    className={classes.image}
+                    className={classes.urlImage}
                     src={require(`../../static/projectPictures/${card.image}`)}
                     alt={classes.title}
                   />
