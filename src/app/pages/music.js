@@ -1,5 +1,6 @@
 import React from "react";
 import Header from "../components/Header";
+import Music from "../components/Music";
 import Layout from "../layouts/layout";
 
 class Home extends React.Component {
@@ -8,6 +9,7 @@ class Home extends React.Component {
       <>
         <Layout title="Sanket Jain | Music">
           <Header />
+          <Music />
         </Layout>
       </>
     );

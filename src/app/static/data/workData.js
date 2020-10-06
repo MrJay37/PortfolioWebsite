@@ -47,7 +47,12 @@ const workData = [
     role: "Assistant Audio Engineer",
     fromDate: "July 2018",
     toDate: "October 2018",
-    description: [],
+    description: [
+      "Managed and organized studio projects and external projects from clients",
+      "Recorded, edited, composed, produced and mixed requested project ideas",
+      "Kept check on studio inventory and optimal functioning of equipment",
+      "Filled in for head engineer for projects involving major clients",
+    ],
   },
 ];
 
