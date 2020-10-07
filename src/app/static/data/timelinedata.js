@@ -77,7 +77,7 @@ export const TimeLineData = [
       <>
         Some college competition judge didn't think my project was cool enough.
         Well joke's on him, it was definitely not cool enough, he should've
-        knwon for certain.
+        known for certain.
       </>
     ),
   },
@@ -92,7 +92,7 @@ export const TimeLineData = [
     eventDescription: <>I'm making dope beats and disappointing my parents.</>,
   },
   {
-    date: "Dec 2019",
+    date: "Dec 2018",
     eventTitle: "Joined Acuradyne Medical Systems as Embedded Systems Engineer",
     eventDescription: (
       <>I'm not making dope beats and disappointing my parents.</>

@@ -2,7 +2,7 @@ const workData = [
   {
     employer: "Contentstack",
     role: "Front End Developer Intern",
-    fromDate: "June 2020",
+    fromDate: "Jun 2020",
     toDate: "Current",
     description: [
       "Working on UI development for a content management system product",
@@ -32,7 +32,7 @@ const workData = [
   {
     employer: "Acuradyne Medical Systems",
     role: "Embedded Systems Engineering Intern",
-    fromDate: "Dec 201",
+    fromDate: "Dec 2018",
     toDate: "May 2019",
     description: [
       "Researched and studied applications of electronics and embedded systems in healthcare and lifestyle",
@@ -45,8 +45,8 @@ const workData = [
   {
     employer: "Sonic Octaves",
     role: "Assistant Audio Engineer",
-    fromDate: "July 2018",
-    toDate: "October 2018",
+    fromDate: "Jul 2018",
+    toDate: "Oct 2018",
     description: [
       "Managed and organized studio projects and external projects from clients",
       "Recorded, edited, composed, produced and mixed requested project ideas",

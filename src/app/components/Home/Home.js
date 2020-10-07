@@ -154,7 +154,7 @@ const Home = (props) => {
                 <a
                   className={classes.resumeButton}
                   href={require("../../static/resume.pdf")}
-                  download
+                  filename="Resume_Sanket_Jain.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -167,7 +167,7 @@ const Home = (props) => {
         <div className={classes.text}>
           {wm && <div className={classes.sectionHeader}>More about me?</div>}
           <p>
-            I'm a Master of Science in Computer Engineer student from Jersey
+            I'm a Master of Science in Computer Engineering student from Jersey
             City, NJ, about to graduate this December from Stevens Institute of
             Technology!
           </p>
@@ -175,7 +175,7 @@ const Home = (props) => {
             Currently, I work at{" "}
             <a
               href="https://www.contentstack.com/"
-              target="_black"
+              target="_blank"
               rel="noopener noreferrer"
               style={{
                 textDecoration: "none",
@@ -236,7 +236,7 @@ const Home = (props) => {
               <a
                 className={classes.resumeButton}
                 href={require("../../static/resume.pdf")}
-                download
+                filename="Resume_Sanket_Jain.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
               >

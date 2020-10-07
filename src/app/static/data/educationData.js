@@ -21,7 +21,7 @@ const educationData = [
   },
   {
     fromDate: "Aug 2012",
-    toDate: "March 2014",
+    toDate: "Mar 2014",
     graduated: true,
     schoolName: "Mithibai College",
     schoolAddress: "Mumbai, Maharashtra, India",
@@ -31,7 +31,7 @@ const educationData = [
   },
   {
     fromDate: "Aug 2002",
-    toDate: "April 2012",
+    toDate: "Apr 2012",
     graduated: true,
     schoolName: "Swami Vivekananda International School",
     schoolAddress: "Mumbai, Maharashtra, India",
