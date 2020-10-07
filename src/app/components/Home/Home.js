@@ -153,7 +153,7 @@ const Home = (props) => {
               <div className={classes.resumeButtonContainer}>
                 <a
                   className={classes.resumeButton}
-                  href={require("../../static/resume.pdf")}
+                  href={require("../../static/Resume_Sanket_Jain.pdf")}
                   filename="Resume_Sanket_Jain.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -235,8 +235,7 @@ const Home = (props) => {
             <div className={classes.resumeButtonContainer}>
               <a
                 className={classes.resumeButton}
-                href={require("../../static/resume.pdf")}
-                filename="Resume_Sanket_Jain.pdf"
+                href={require("../../static/Resume_Sanket_Jain.pdf")}
                 target="_blank"
                 rel="noopener noreferrer"
               >
