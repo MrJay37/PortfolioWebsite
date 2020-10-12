@@ -1,6 +1,24 @@
 const projectData = [
   {
-    title: "Fonebooc ",
+    title: "Abagauss",
+    date: "Oct 2020",
+    image: "abagaussLogin.jpg",
+    githubLink: "https://github.com/MrJay37/Abagauss",
+    youtubeLink: false,
+    description: "I had a problem with my band in that we weren't able to maintain our project flow well, so I thought let's make an application where artists can track, manage and collaborate on projects. Abagauss is that. It's a full stack web leveraging the AWS architecture.",
+    technology: [
+      "ReactJS",
+      "HTML/CSS",
+      "Redux",
+      "Amazon Web Services",
+      "Cognito",
+      "DynamoDB",
+      "REST API"
+    ],
+    members: ["Sanket Jain"]
+  },
+  {
+    title: "Fonebooc",
     date: "June 2020",
     image: "fonebooc.jpg",
     githubLink: "https://github.com/MrJay37/react-redux-CRUD-contactlist",
