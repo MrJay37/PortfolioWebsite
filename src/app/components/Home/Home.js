@@ -172,20 +172,6 @@ const Home = (props) => {
             Technology!
           </p>
           <p>
-            Currently, I work at{" "}
-            <a
-              href="https://www.contentstack.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-              style={{
-                textDecoration: "none",
-              }}
-            >
-              Contentstack{" "}
-            </a>
-            as a Front End Developer Intern.
-          </p>
-          <p>
             I'm looking for full time opportunities in Front End/ Full Stack
             Development roles to learn industrial development methods and
             techniques!

@@ -72,7 +72,7 @@ const projectData = [
     title: "Smart Kitchen Smoke Detector",
     date: "Feb 2020",
     image: "smartKitchen.jpeg",
-    githubLink: "",
+    githubLink: "https://github.com/MrJay37/Drexel-Dragonhacks-Hackathon",
     youtubeLink: "",
     description:
       "The reason why this project is so necessary to mention is that this one got us 3 prizes at the MLH DragonHacks hackathon, which were Second Prize (silver medal), Best hardware hack and Best use of Google Cloud! It was a combination of electronics, IoT, machine learning and computer vision. the aim was to make sure that the kitchen recognizes a fire not just by raise in temperature and smoke but some extra characteristics also such as flame detection using camera and careful measurement in changes on ambient readings",

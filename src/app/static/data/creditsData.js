@@ -1,15 +1,11 @@
 const CreditsData = [
   {
-    name: "Icons",
+    name: "icons",
     text: "Icons from React Icons",
   },
   {
-    name: "buildSVG",
-    text: "Build tools SVG from Freepik",
-  },
-  {
-    name: "timeline",
-    text: "Timeline, Drawer and Accordion Component from Material UI",
+    name: "materialui",
+    text: "Drawer and Accordion Component from Material UI",
   },
 ];
 

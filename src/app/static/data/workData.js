@@ -3,7 +3,7 @@ const workData = [
     employer: "Contentstack",
     role: "Front End Developer Intern",
     fromDate: "Jun 2020",
-    toDate: "Current",
+    toDate: "Nov 2020",
     description: [
       "Working on UI development for a content management system product",
       "Designing reusable functional components and page wrappers using HTML and ReactJS",
