@@ -2,7 +2,7 @@ const educationData = [
   {
     fromDate: "Aug 2019",
     toDate: "Dec 2020",
-    graduated: false,
+    graduated: true,
     schoolName: "Stevens Institute of Technology",
     schoolAddress: "Hoboken, New Jersey, United States of America",
     degree: "Master of Science",

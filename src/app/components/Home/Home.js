@@ -150,7 +150,7 @@ const Home = (props) => {
                   </div>
                 </Link>
               </div>
-              <div className={classes.resumeButtonContainer}>
+              {/* <div className={classes.resumeButtonContainer}>
                 <a
                   className={classes.resumeButton}
                   href={require("../../static/Resume_Sanket_Jain.pdf")}
@@ -160,7 +160,7 @@ const Home = (props) => {
                 >
                   <>Resume</>
                 </a>
-              </div>
+              </div> */}
             </>
           )}
         </div>
@@ -218,7 +218,7 @@ const Home = (props) => {
                 </div>
               </Link>
             </div>
-            <div className={classes.resumeButtonContainer}>
+            {/* <div className={classes.resumeButtonContainer}>
               <a
                 className={classes.resumeButton}
                 href={require("../../static/Resume_Sanket_Jain.pdf")}
@@ -227,7 +227,7 @@ const Home = (props) => {
               >
                 <>Resume</>
               </a>
-            </div>
+            </div> */}
           </>
         )}
       </div>
