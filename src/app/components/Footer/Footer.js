@@ -22,7 +22,7 @@ const Footer = (props) => {
   return (
     <div className={classes.root}>
       <div>
-        &#169; 2020 Sanket Jain | Made using Create-React-App | Hosted on
+        &#169; 2021 Sanket Jain | Made using Create-React-App | Hosted on
         Netlify
       </div>
     </div>

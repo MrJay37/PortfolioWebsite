@@ -1,5 +1,19 @@
 const workData = [
   {
+    employer: "Approved Energy",
+    role: "Software Engineering Analyst",
+    fromDate: "Jan 2021",
+    toDate: "Present",
+    description: [
+      "Working on UI development for a content management system product",
+      "Designing reusable functional components and page wrappers using HTML and ReactJS",
+      "Creating JavaScript helper modules for data manipulation and presentation on the client side",
+      "Interfacing front-end with the back end using Rest API and state-management using Redux",
+      "Writing test cases for the JS code using tools like Jest and Enzyme",
+      "Maintaining project version control using Git and GitHub and tracking project progress and objectives on JIRA",
+    ],
+  },
+  {
     employer: "Contentstack",
     role: "Front End Developer Intern",
     fromDate: "Jun 2020",

@@ -150,7 +150,7 @@ const Home = (props) => {
                   </div>
                 </Link>
               </div>
-              {/* <div className={classes.resumeButtonContainer}>
+              <div className={classes.resumeButtonContainer}>
                 <a
                   className={classes.resumeButton}
                   href={require("../../static/Resume_Sanket_Jain.pdf")}
@@ -160,21 +160,14 @@ const Home = (props) => {
                 >
                   <>Resume</>
                 </a>
-              </div> */}
+              </div>
             </>
           )}
         </div>
         <div className={classes.text}>
           {wm && <div className={classes.sectionHeader}>More about me?</div>}
           <p>
-            I'm a Master of Science in Computer Engineering student from Jersey
-            City, NJ, about to graduate this December from Stevens Institute of
-            Technology!
-          </p>
-          <p>
-            I'm looking for full time opportunities in Front End/ Full Stack
-            Development roles to learn industrial development methods and
-            techniques!
+            I'm a software engineering analyst at Approved Energy at Stamford, CT and I play the piano!
           </p>
           <div>
             {skillsData.map((skill, i) => (
@@ -218,7 +211,7 @@ const Home = (props) => {
                 </div>
               </Link>
             </div>
-            {/* <div className={classes.resumeButtonContainer}>
+            <div className={classes.resumeButtonContainer}>
               <a
                 className={classes.resumeButton}
                 href={require("../../static/Resume_Sanket_Jain.pdf")}
@@ -227,7 +220,7 @@ const Home = (props) => {
               >
                 <>Resume</>
               </a>
-            </div> */}
+            </div>
           </>
         )}
       </div>

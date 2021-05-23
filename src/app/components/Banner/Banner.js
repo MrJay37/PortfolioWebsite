@@ -66,13 +66,13 @@ const Banner = (props) => {
       <div className={classes.root}>
         {theme.mode === "widescreen" ? (
           <img
-            src={require("../../static/banPic.jpg")}
+            src={require("../../static/banPic.png")}
             alt="banner-me"
             className={classes.image}
           />
         ) : (
           <img
-            src={require("../../static/banPic.jpg")}
+            src={require("../../static/banPic.png")}
             alt="banner-me"
             className={classes.image}
           />
